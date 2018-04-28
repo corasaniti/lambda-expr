@@ -22,7 +22,7 @@ public class MessageSender {
 	
 	
 	public void sendMessage(String msg, List<Persona> persone){
-	       // Logica di Invio messaggio	 
+	       // Logica di Invio messaggio
 	       System.out.println("Inviato messaggio " + msg + " a "+persone.size()+" iscritti");
 	     }
 }
