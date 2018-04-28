@@ -14,7 +14,7 @@ public class RunnableTest {
 	      }
 	    };
 	 
-	   // Lambda Runnable
+	   // Lambda Runnable Example
 	   Runnable r2 = () -> System.out.println("Hello world with Lambda!");
 	 
 	   r1.run();
