@@ -16,6 +16,12 @@ public class Persona {
         this.eta = eta;
         this.nazionalita = nazionalita;        
     }
+    
+    public Persona(String nome, String cognome) 
+    {
+        this.nome = nome;
+        this.cognome = cognome;        
+    }
 
 	public String getNome() {
 		return nome;
@@ -57,6 +63,13 @@ public class Persona {
 		this.nazionalita = nazionalita;
 	}
     
-    
+	public boolean isFemale(){
+		return this.getSesso()=="F";
+	}
+	
+	@Override
+	public String toString(){
+		return ("Nome: " + this.getNome() + " Cognome:" + this.getCognome());
+	}
     
 }
