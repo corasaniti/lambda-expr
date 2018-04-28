@@ -1,4 +1,4 @@
-package src.com.corasaniti.lambda;
+package com.corasaniti.lambda;
 
 public class FirstClass {
 
