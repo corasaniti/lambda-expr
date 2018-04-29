@@ -1,7 +1,9 @@
-package com.corasaniti.lambda.model;
+package com.corasaniti.lambda.model.instance;
 
 import java.util.Arrays;
 import java.util.List;
+
+import com.corasaniti.lambda.model.Persona;
 
 public class MyFamily {
 	
