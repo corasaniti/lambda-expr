@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-import com.corasaniti.lambda.model.MyFamily;
+import com.corasaniti.lambda.model.instance.MyFamily;
 
 /*
  * Esempio di Lambda Expression 
