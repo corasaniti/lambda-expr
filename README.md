@@ -1,2 +1,3 @@
-# lampda-expression example in Java8 by Pietro Corasaniti
+# Lampda-Expression example in Java8 
+# Pietro Corasaniti
 
