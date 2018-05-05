@@ -2,6 +2,7 @@ package com.corasaniti.lambda;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import com.corasaniti.lambda.model.instance.MyFamily;
@@ -48,7 +49,12 @@ public class ForeachExample {
 		//Stampa gli uomini della mia famiglia
 		System.out.println("Stampa gli uomini della mia famiglia");
 		myFamily.getMyFamily().stream().filter((p)->!p.isFemale()).forEach((p)->System.out.println(p));
+		
+		//Calcola la somma dell'eta dei maschi della mia famiglia
+		Integer anniMaschi = myFamily.getMyFamily().stream().filter((p)->!p.isFemale()).map((p)->p.getEta()).reduce(0, Integer::sum);
+		System.out.println("Anni Totali dei maschi" + anniMaschi);
 
+		
 	}
 	
 }
