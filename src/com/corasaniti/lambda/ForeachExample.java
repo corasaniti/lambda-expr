@@ -52,7 +52,11 @@ public class ForeachExample {
 		
 		//Calcola la somma dell'eta dei maschi della mia famiglia
 		Integer anniMaschi = myFamily.getMyFamily().stream().filter((p)->!p.isFemale()).map((p)->p.getEta()).reduce(0, Integer::sum);
-		System.out.println("Anni Totali dei maschi" + anniMaschi);
+		
+		//These reduction operations can run safely in parallel with almost no modification:
+		Integer anniMaschi2 = myFamily.getMyFamily().stream().parallel().filter((p)->!p.isFemale()).map((p)->p.getEta()).reduce(0, Integer::sum);		
+		System.out.println("Anni Totali dei maschi..." + anniMaschi);
+		System.out.println("Anni Totali dei maschi..." + anniMaschi2);
 
 		
 	}
